@@ -1,5 +1,6 @@
 # Soft Sort JAX
-AD support for soft sort
+AD support for soft sort,
+
 ```python
 import jax
 import jax.numpy as jnp
@@ -25,3 +26,12 @@ Note performance is very bad. Some code need to be optimized.
 #73.5 ms ± 162 µs per loop (mean ± std. dev. of 7 runs, 10 loops each)
 ```
 and jit does not work yet.
+
+Reference
+------------
+> original repo [fast-soft-sort](https://github.com/google-research/fast-soft-sort)   
+> 
+> Fast Differentiable Sorting and Ranking
+> Mathieu Blondel, Olivier Teboul, Quentin Berthet, Josip Djolonga
+> In proceedings of ICML 2020
+> [arXiv:2002.08871](https://arxiv.org/abs/2002.08871)
